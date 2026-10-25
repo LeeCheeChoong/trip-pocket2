@@ -1,0 +1,27 @@
+# Secrets: never commit these (the Anthropic key lives in Supabase secrets, not here)
+.env
+.env.*
+!.env.example
+supabase/.env
+supabase/functions/.env
+
+# Dependencies and build output
+node_modules/
+.wrangler/
+dist/
+
+# Supabase CLI local state
+supabase/.branches/
+supabase/.temp/
+
+# Editor and OS files
+.vscode/
+.idea/
+.claude/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+# Release zips are built from this folder, not stored in it
+*.zip
